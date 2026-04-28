@@ -1,0 +1,15 @@
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\bin\Debug\CybersecurityChatbotWPF.exe.config
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\bin\Debug\CybersecurityChatbotWPF.exe
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\bin\Debug\CybersecurityChatbotWPF.pdb
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\CybersecurityChatbotWPF.csproj.AssemblyReference.cache
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\MainWindow.g.cs
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\App.g.cs
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\CybersecurityChatbotWPF_MarkupCompile.cache
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\CybersecurityChatbotWPF_MarkupCompile.lref
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\MainWindow.baml
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\CybersecurityChatbotWPF.g.resources
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\CybersecurityChatbotWPF.Properties.Resources.resources
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\CybersecurityChatbotWPF.csproj.GenerateResource.cache
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\CybersecurityChatbotWPF.csproj.CoreCompileInputs.cache
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\CybersecurityChatbotWPF.exe
+C:\Users\lab_services_student\Desktop\prog6221-part2-Lee-SihJin\CybersecurityChatbotWPF\CybersecurityChatbotWPF\obj\Debug\CybersecurityChatbotWPF.pdb
