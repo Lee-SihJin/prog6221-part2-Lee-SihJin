@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|c:\\users\\lab_services_student\\desktop\\prog6221-part2-lee-sihjin\\cybersecuritychatbotwpf\\cybersecuritychatbotwpf\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|solutionrelative:cybersecuritychatbotwpf\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|c:\\users\\lab_services_student\\desktop\\prog6221-part2-lee-sihjin\\cybersecuritychatbotwpf\\cybersecuritychatbotwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|solutionrelative:cybersecuritychatbotwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -27,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AudioService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\AudioService.cs",
+              "RelativeDocumentMoniker": "CybersecurityChatbotWPF\\AudioService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\AudioService.cs",
+              "RelativeToolTip": "CybersecurityChatbotWPF\\AudioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T12:21:11.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "CybersecurityChatbotWPF\\MainWindow.xaml",
@@ -38,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "CybersecurityChatbotWPF\\MainWindow.xaml.cs",
