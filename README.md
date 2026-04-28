@@ -80,7 +80,7 @@ CybersecurityChatbotWPF/
 
 1. **Clone the repository**
    ```bash
-   git clone 
+   git clone https://github.com/Lee-SihJin/prog6221-part2-Lee-SihJin.git
    ```
 
 2. **Open the project**
