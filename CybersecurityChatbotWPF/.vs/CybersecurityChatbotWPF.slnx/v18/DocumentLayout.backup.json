@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\cybersecuritychatbotwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|solutionrelative:cybersecuritychatbotwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|c:\\users\\lab_services_student\\desktop\\prog6221-part2-lee-sihjin\\cybersecuritychatbotwpf\\cybersecuritychatbotwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|solutionrelative:cybersecuritychatbotwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\cybersecuritychatbotwpf\\chatbotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|solutionrelative:cybersecuritychatbotwpf\\chatbotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\cybersecuritychatbotwpf\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|solutionrelative:cybersecuritychatbotwpf\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\cybersecuritychatbotwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|solutionrelative:cybersecuritychatbotwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|c:\\users\\lab_services_student\\desktop\\prog6221-part2-lee-sihjin\\cybersecuritychatbotwpf\\cybersecuritychatbotwpf\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|solutionrelative:cybersecuritychatbotwpf\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|c:\\users\\lab_services_student\\desktop\\prog6221-part2-lee-sihjin\\cybersecuritychatbotwpf\\cybersecuritychatbotwpf\\data\\greeting.wav||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|solutionrelative:cybersecuritychatbotwpf\\data\\greeting.wav||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\cybersecuritychatbotwpf\\chatbotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E80CAB7-6615-44A9-8428-2BF83278E64E}|CybersecurityChatbotWPF\\CybersecurityChatbotWPF.csproj|solutionrelative:cybersecuritychatbotwpf\\chatbotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +42,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\App.config",
+              "RelativeDocumentMoniker": "CybersecurityChatbotWPF\\App.config",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\App.config",
+              "RelativeToolTip": "CybersecurityChatbotWPF\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-28T13:27:55.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "greeting.wav",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\Data\\greeting.wav",
+              "RelativeDocumentMoniker": "CybersecurityChatbotWPF\\Data\\greeting.wav",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\Data\\greeting.wav",
+              "RelativeToolTip": "CybersecurityChatbotWPF\\Data\\greeting.wav",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATUSURBVFhH7ZZNbFRVFMd/817bmSmNdaaQFKUF6sw4C2ZISgLRjRBZmW4I3QguTSyL8mFIjJGgXdkFididwYUGSFwY0cSEaCImJrUfCmFmmBFoxUZnKhVmKC2dN\u002BW9d4\u002BL53S\u002BSyVGN/6SuznnvnP\u002B95x7Zi78l4hItel//nVc1YZkMil\u002Bvx9d11FKVbsbIGiajmmazMzMcOrUqWMXLlw4Xb1rTaRSKVFKyeNgmqakUikZHR2V/fv3H6\u002BOvSZSqZQsLy\u002BLiIhSSpSyxbYbLUssq7RERKanp\u002BXmzZuSTCbtffv2HatX5VWpFFCdsJS4OnlRwMzMLzI7OyuWZUksFpODBw8eBZqq8xTRqg3l1J9SQcTxuVzlh3M2P3xoUigU0HWd7u5uBgYG3uvv73\u002B9kYia8qRSKenp6cHtdte9hOW/HfPLwkdjaY7u3gSArjdx/fp1rlz5EdAQEdra2mhqaqKvr68HmAPyZeFWr0AtlSVxAWduWFyduYMIWJZFOBzmwIFX2Lt3Lzt27KCrqwvbtgXYCrRXBFi7AFkpfTlPenV0Tyvv3Ghj2XaclmVimiYbNmwgHA7T29tLOBwWwFOvDWsQUOp5ua1oX6cp5rxuXvs\u002BW9Eey7IwzWVA6OrqKn1UxSME1J66GEMEliwwxOaQ6wZfm618MDpVtl9WrphpmqXPq2ggQBCpn7y8GgrB0Gxefu5Zjrcu8O7lBxXVKe2tCbRCXQH1EtdWQ9BcYADTc/MM7nqK5UXD8VRUoSZYBXUFVFIqOTizX1wtCLoobFvRrAEPy0u9euIijxBQSu5yudA0jSULvrxl8Mktk29\u002BK2AbNp3tXj6OzeMqLNUteW1FSzQQUNlHAE3T\u002BPyneQa\u002B\u002BoM3rxZ4K2Fz6AcBU1jnbeGzy7c50uupjPK4d4AGqt/4Lkcsr3FH83D3QYFs7h4qv8TM7XmGXlzP8f4Xalq2WnIaCahN7kyF5\u002BlO0tJK/m4Wmb\u002BHup\u002BnsFDArQvRTe1omjN2a01OIwElnFYA2LaNb\u002B4WlktB5xMo5UXu3\u002BXVgMHmzo6G3z2Kun9GW7Zswe1uQSlVUY0784t8ce13JmfzeC3Fzs3tHHh\u002B64q/3smbm5tZWFhUPp\u002BvD0gA6RXnagJaWhwBDqWA9S5VvcRFe3NzE4uLi8rn89cV0LAFY2NjDA8PA8LZs\u002BcYHh5GBEZG3md8fByAXC7H4OBhzp8/BwiGYXD48BGy2RwiMDQ0RCwWrw5dQUMBoVCQdNoROzU1RTabwzAM0ukMoVAIEbh6NUYgECAeTwDg9XqJRCLE4zFyuSyGYbB9e7QqciUNBAgdHR34/X4uXfqWjo4OgsEA4\u002BNjeL1efD4/AJOTk\u002BzZsxu/38/4\u002BAQAkUiE6emficfjRCKRqri1NBDgEI1GuXjxIoFAgEAgwMTEJNGoc6JMJk0mk\u002BHMmQ/JZDIkEglEIBqNkEgkSCSuEY0\u002BhgARQSlnBYNBDMMgGAwSCoXIZDIEg88AiomJCXbt2snIyGlOnjxJIpEgn1/C4/EQiUTIZDJs27YNpShe5rXNZTKZLHvp/3MALwHO47GMmjE8ceLEpxs3blzvdre0iziqRcB5ANeOWbWtSHE0dV13GYahBgcH3wbiwK/l\u002B2oE/EU70A3UPov/Pi5AByxgFrhX7vwTPsVf08OIZFgAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-04-28T13:27:53.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ChatbotService.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\ChatbotService.cs",
               "RelativeDocumentMoniker": "CybersecurityChatbotWPF\\ChatbotService.cs",
@@ -42,23 +74,25 @@
               "RelativeToolTip": "CybersecurityChatbotWPF\\ChatbotService.cs",
               "ViewState": "AgIAACMAAAAAMzMzM7MtwOoAAACqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T12:25:53.704Z"
+              "WhenOpened": "2026-04-28T12:25:53.704Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AudioService.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\AudioService.cs",
               "RelativeDocumentMoniker": "CybersecurityChatbotWPF\\AudioService.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\AudioService.cs",
               "RelativeToolTip": "CybersecurityChatbotWPF\\AudioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAABAZGZmZuYlwBkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T12:21:11.775Z"
+              "WhenOpened": "2026-04-28T12:21:11.775Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "CybersecurityChatbotWPF\\MainWindow.xaml",
@@ -70,13 +104,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "CybersecurityChatbotWPF\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "CybersecurityChatbotWPF\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAAHAAAAAAFDMzMzMEwH0AAAAbAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\prog6221-part2-Lee-SihJin\\CybersecurityChatbotWPF\\CybersecurityChatbotWPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "CybersecurityChatbotWPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAFIBAAAAnZmZmZkbwN0BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-28T11:56:47.568Z",
               "EditorCaption": ""

@@ -19,13 +19,13 @@ namespace CybersecurityChatbotWPF
         private string _currentTopic;
         private int _currentTipIndex;
         private List<string> _currentTips;
+        private bool _waitingForName = true;
 
         public MainWindow()
         {
             InitializeComponent();
             InitializeServices();
             PlayVoiceGreeting();
-            DisplayAsciiArt();
             ShowWelcomeMessage();
         }
 
@@ -50,20 +50,15 @@ namespace CybersecurityChatbotWPF
             }
         }
 
-        private void DisplayAsciiArt()
-        {
-            // ASCII art is already in XAML, just ensure it's visible
-            AsciiArtBlock.Visibility = Visibility.Visible;
-        }
-
         private async void ShowWelcomeMessage()
         {
             await Task.Delay(500);
-            AddBotMessage("Hello! Welcome to the Cybersecurity Awareness Bot! I'm here to help you stay safe online.", "Greeting");
+            AddBotMessage("Hello! Welcome to the Cybersecurity Awareness Bot! I'm here to help you stay safe online. 🔒", "Greeting");
             await Task.Delay(500);
 
             // Ask for user name
             AddBotMessage("What's your name?", "Greeting");
+            _waitingForName = true;
         }
 
         private void AddUserMessage(string message)
@@ -89,7 +84,8 @@ namespace CybersecurityChatbotWPF
                 Text = message,
                 FontSize = 13,
                 Foreground = Brushes.White,
-                TextWrapping = TextWrapping.Wrap
+                TextWrapping = TextWrapping.Wrap,
+                MaxWidth = 400
             };
 
             var timeText = new TextBlock
@@ -123,7 +119,7 @@ namespace CybersecurityChatbotWPF
             var headerPanel = new StackPanel { Orientation = Orientation.Horizontal };
             var botIcon = new TextBlock
             {
-                Text = "Bot",
+                Text = "🤖",
                 FontSize = 12,
                 Margin = new Thickness(0, 0, 5, 0)
             };
@@ -142,7 +138,8 @@ namespace CybersecurityChatbotWPF
                 Text = message,
                 FontSize = 13,
                 Foreground = Brushes.White,
-                TextWrapping = TextWrapping.Wrap
+                TextWrapping = TextWrapping.Wrap,
+                MaxWidth = 400
             };
 
             var timeText = new TextBlock
@@ -218,6 +215,20 @@ namespace CybersecurityChatbotWPF
             // Add user message to chat
             AddUserMessage(userInput);
 
+            // Handle name input if waiting for name
+            if (_waitingForName)
+            {
+                _chatbotService.SetUserName(userInput);
+                _waitingForName = false;
+
+                // Personalized welcome
+                await Task.Delay(500);
+                AddBotMessage($"Nice to meet you, {userInput}! I'm your Cybersecurity Awareness Assistant. 🔐", "Greeting");
+                await Task.Delay(500);
+                AddBotMessage("I can help you with password safety, phishing protection, safe browsing, and privacy tips. What would you like to learn about today?", "Help");
+                return;
+            }
+
             // Show loading
             LoadingOverlay.Visibility = Visibility.Visible;
 
@@ -241,9 +252,19 @@ namespace CybersecurityChatbotWPF
             StoreInMemory(userInput, response.Topic);
 
             // Check for recall requests
-            if (userInput.ToLower().Contains("remember") || userInput.ToLower().Contains("recall"))
+            if (userInput.ToLower().Contains("remember") || userInput.ToLower().Contains("recall") || userInput.ToLower().Contains("what did i"))
             {
-                finalResponse = RecallInformation(userInput);
+                string recalledInfo = RecallInformation(userInput);
+                if (!string.IsNullOrEmpty(recalledInfo))
+                {
+                    finalResponse = recalledInfo;
+                }
+            }
+
+            // Check for interest storage
+            if (userInput.ToLower().Contains("interested in") || userInput.ToLower().Contains("i like"))
+            {
+                StoreUserInterest(userInput);
             }
 
             // Add bot message
@@ -268,24 +289,30 @@ namespace CybersecurityChatbotWPF
             string lowerInput = input.ToLower();
 
             if (lowerInput.Contains("worried") || lowerInput.Contains("scared") ||
-                lowerInput.Contains("anxious") || lowerInput.Contains("nervous"))
+                lowerInput.Contains("anxious") || lowerInput.Contains("nervous") ||
+                lowerInput.Contains("fear") || lowerInput.Contains("afraid"))
             {
                 return "worried";
             }
             else if (lowerInput.Contains("confused") || lowerInput.Contains("lost") ||
-                     lowerInput.Contains("dont understand"))
+                     lowerInput.Contains("dont understand") || lowerInput.Contains("don't understand"))
             {
                 return "confused";
             }
             else if (lowerInput.Contains("frustrated") || lowerInput.Contains("annoyed") ||
-                     lowerInput.Contains("angry"))
+                     lowerInput.Contains("angry") || lowerInput.Contains("fed up"))
             {
                 return "frustrated";
             }
             else if (lowerInput.Contains("curious") || lowerInput.Contains("interested") ||
-                     lowerInput.Contains("tell me"))
+                     lowerInput.Contains("tell me") || lowerInput.Contains("want to know"))
             {
                 return "curious";
+            }
+            else if (lowerInput.Contains("happy") || lowerInput.Contains("great") ||
+                     lowerInput.Contains("good") || lowerInput.Contains("excited"))
+            {
+                return "happy";
             }
 
             return "neutral";
@@ -296,16 +323,19 @@ namespace CybersecurityChatbotWPF
             switch (sentiment)
             {
                 case "worried":
-                    return "It's completely understandable to feel that way. " + response +
-                           " Remember, staying informed is the first step to staying safe! 💙";
+                    return "💙 It's completely understandable to feel that way. " + response +
+                           "\n\nRemember, staying informed is the first step to staying safe! You're doing the right thing by learning about this.";
                 case "confused":
-                    return "I understand this can be confusing. Let me explain simply: " + response +
-                           " Would you like me to explain more about this topic?";
+                    return "🤔 I understand this can be confusing. Let me explain simply: " + response +
+                           "\n\nWould you like me to explain more about this topic in a different way?";
                 case "frustrated":
-                    return "I hear your frustration. Cybersecurity can be challenging, but you're doing great! " +
-                           response + " Take a deep breath and remember you're building good habits. 💪";
+                    return "💪 I hear your frustration. Cybersecurity can be challenging, but you're doing great! " + response +
+                           "\n\nTake a deep breath - you're building important skills that will protect you online!";
                 case "curious":
-                    return "Great question! I love your curiosity about cybersecurity. " + response;
+                    return "🌟 Great question! I love your curiosity about cybersecurity. " + response +
+                           "\n\nKeep asking questions - that's how we all learn to stay safe!";
+                case "happy":
+                    return "😊 That's wonderful to hear! " + response;
                 default:
                     return response;
             }
@@ -318,7 +348,8 @@ namespace CybersecurityChatbotWPF
                    lowerInput.Contains("more") ||
                    lowerInput.Contains("explain") ||
                    lowerInput.Contains("tell me more") ||
-                   lowerInput.Contains("elaborate");
+                   lowerInput.Contains("elaborate") ||
+                   lowerInput.Contains("continue");
         }
 
         private string HandleFollowUp(string input, string currentResponse)
@@ -336,7 +367,7 @@ namespace CybersecurityChatbotWPF
             }
             else if (lowerInput.Contains("explain") || lowerInput.Contains("tell me more"))
             {
-                return $"Of course! Let me provide more detail. {currentResponse} Would you like to know more about this topic?";
+                return $"Of course! Let me provide more detail. {currentResponse}\n\nWould you like to know more about this topic?";
             }
 
             return currentResponse;
@@ -344,7 +375,7 @@ namespace CybersecurityChatbotWPF
 
         private void StoreInMemory(string userInput, string topic)
         {
-            if (!string.IsNullOrEmpty(topic) && topic != "General" && topic != "Invalid Input")
+            if (!string.IsNullOrEmpty(topic) && topic != "General" && topic != "Invalid Input" && topic != "Exit")
             {
                 _currentTopic = topic;
 
@@ -354,6 +385,38 @@ namespace CybersecurityChatbotWPF
                 }
 
                 _conversationMemory[topic].Add(userInput);
+
+                // Keep only last 10 entries per topic to manage memory
+                if (_conversationMemory[topic].Count > 10)
+                {
+                    _conversationMemory[topic].RemoveAt(0);
+                }
+            }
+        }
+
+        private void StoreUserInterest(string input)
+        {
+            string lowerInput = input.ToLower();
+
+            if (lowerInput.Contains("password"))
+            {
+                _chatbotService.StoreUserInterest("password safety");
+                AddBotMessage("Great! I'll remember that you're interested in password safety. It's a crucial part of staying safe online! 🔐", "Memory");
+            }
+            else if (lowerInput.Contains("phish") || lowerInput.Contains("scam"))
+            {
+                _chatbotService.StoreUserInterest("phishing protection");
+                AddBotMessage("Excellent! I'll remember you want to learn about phishing protection. Scammers are getting smarter, but so are you! 🎣", "Memory");
+            }
+            else if (lowerInput.Contains("brows") || lowerInput.Contains("wifi"))
+            {
+                _chatbotService.StoreUserInterest("safe browsing");
+                AddBotMessage("Good choice! I'll note that you're interested in safe browsing habits. The web can be safer with the right knowledge! 🌐", "Memory");
+            }
+            else if (lowerInput.Contains("privacy"))
+            {
+                _chatbotService.StoreUserInterest("privacy");
+                AddBotMessage("Privacy is so important! I'll remember you want to learn about protecting your personal information online. 🔏", "Memory");
             }
         }
 
@@ -361,18 +424,31 @@ namespace CybersecurityChatbotWPF
         {
             string lowerInput = userInput.ToLower();
 
+            // Recall user interests
+            string interests = _chatbotService.GetUserInterests();
+            if (!string.IsNullOrEmpty(interests) && (lowerInput.Contains("interest") || lowerInput.Contains("like")))
+            {
+                return $"I remember you're interested in {interests}. Would you like me to share more tips about these topics? 📚";
+            }
+
+            // Recall conversation topics
             foreach (var topic in _conversationMemory.Keys)
             {
                 if (lowerInput.Contains(topic.ToLower()))
                 {
-                    return $"I recall you were asking about {topic} earlier. " +
-                           $"Would you like me to share more {topic} tips with you?";
+                    return $"I recall you were asking about {topic} earlier. Would you like me to share more {topic} tips with you? 💡";
                 }
             }
 
+            // General recall
             if (_conversationMemory.Count > 0 && !string.IsNullOrEmpty(_currentTopic))
             {
-                return $"We were discussing {_currentTopic} before. Would you like me to continue with that topic?";
+                string userName = _chatbotService.GetUserName();
+                if (!string.IsNullOrEmpty(userName))
+                {
+                    return $"{userName}, we were discussing {_currentTopic} before. Would you like me to continue with that topic? 🤖";
+                }
+                return $"We were discussing {_currentTopic} earlier. Would you like more information about this? 💭";
             }
 
             return null;
@@ -381,7 +457,7 @@ namespace CybersecurityChatbotWPF
         private void StoreConversationHistory(string userInput, string botResponse)
         {
             // Store for future recall (max 10 items per topic)
-            if (!string.IsNullOrEmpty(_currentTopic))
+            if (!string.IsNullOrEmpty(_currentTopic) && _currentTopic != "General" && _currentTopic != "Invalid Input")
             {
                 if (!_conversationMemory.ContainsKey(_currentTopic))
                 {
